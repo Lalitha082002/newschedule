@@ -1,0 +1,14 @@
+name: Test Scheduled Run
+
+on:
+  schedule:
+    - cron: '15 9 * * *'  # Runs at 09:13 UTC (2:43 PM IST)
+  workflow_dispatch:  # allows manual trigger
+
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print scheduled time
+        run: echo "✅ Success! This ran at 2:43 PM IST (09:13 UTC)."
+``
