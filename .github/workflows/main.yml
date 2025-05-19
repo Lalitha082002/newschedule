@@ -2,7 +2,7 @@ name: Test Scheduled Run
 
 on:
   schedule:
-    - cron: '15 9 * * *'  # Runs at 09:13 UTC (2:43 PM IST)
+    - cron: '18 9 * * *'  # Runs at 09:13 UTC (2:43 PM IST)
   workflow_dispatch:  # allows manual trigger
 
 jobs:
